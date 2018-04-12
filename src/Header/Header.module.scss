@@ -1,0 +1,101 @@
+.Nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.heroSlogan {
+    position: absolute;
+    top: 150px;
+    left:100px;
+    width: 50%;
+    z-index: 1;
+    font-family: Raleway;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 800;
+    color: black;
+}
+
+.heroButton {
+    margin-top: 20px;
+    color: black;
+    background-color: transparent;
+    font-family: Raleway;
+    font-size: 30px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.heroButton:hover {
+    background-color: black; 
+    transition: background-color .3s linear;
+    color: white;
+    cursor: pointer;
+}
+
+.masthead {
+    color: black;
+    float: left;
+    margin:0 15px 10px 15px;
+    font-family: 'Monoton', cursive;
+}
+
+.links {
+    color: black;
+    float: left;
+    margin: 10px 15px 10px 15px;
+    font-family: Raleway;
+}
+
+.links:hover { 
+    transition: color .3s linear;
+    color: white;
+    cursor: pointer;
+}
+
+.logotech {
+    margin: 20px 5px 0 20px;
+    float: left;
+    border-radius: 50%;
+    height: 50px;
+}
+
+
+.container {
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+  }
+
+  .menurow {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    align-items: center;
+    color: white;
+    float: right;
+    padding-right: 10px;
+    visibility: hidden;
+}
+
+
+  @media (max-width: 600px) {
+    .menurow {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        float: right;
+        padding-right: 10px;
+        visibility: visible;
+    }
+  }

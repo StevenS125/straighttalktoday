@@ -18,12 +18,12 @@
     font-size: 30px;
     text-align: left;
     font-weight: 800;
-    color: black;
+    color: red;
 }
 
 .heroButton {
     margin-top: 20px;
-    color: black;
+    color: red;
     background-color: transparent;
     font-family: Raleway;
     font-size: 30px;
@@ -86,16 +86,26 @@
 }
 
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .menurow {
         height: 80vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        color: white;
+        color: black;
         float: right;
         padding-right: 10px;
         visibility: visible;
+    }
+
+    .Nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        border-bottom: none;
     }
   }

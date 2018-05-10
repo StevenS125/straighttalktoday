@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 export default function Burger(props) {
 	const width       = `${props.width || 36}px`,
@@ -58,14 +58,14 @@ export default function Burger(props) {
 	);
 };
 
-Burger.PropTypes = {
-	isOpen: PropTypes.bool.isRequired,
-	menuClicked: PropTypes.func.isRequired,
-	width: PropTypes.number,
-	height: PropTypes.number,
-	strokeWidth: PropTypes.number,
-	rotate: PropTypes.number,
-	color: PropTypes.string,
-	borderRadius: PropTypes.number,
-	animationDuration: PropTypes.number
+Burger.propTypes = {
+	isOpen: propTypes.bool,
+	menuClicked: propTypes.func.isRequired,
+	width: propTypes.number,
+	height: propTypes.number,
+	strokeWidth: propTypes.number,
+	rotate: propTypes.number,
+	color: propTypes.string,
+	borderRadius: propTypes.number,
+	animationDuration: propTypes.string
 };

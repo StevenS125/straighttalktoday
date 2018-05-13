@@ -21,7 +21,7 @@ this.setState({
 render() {
         return (
     <div id="myNav" className={styles.container}>
-    <img src="../../homehero.jpg" alt="piranha" className={styles.container}/>
+    <img src="../../homehero.JPG" alt="piranha" className={styles.container}/>
         <div className={styles.Nav}> 
         <h1>
         

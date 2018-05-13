@@ -24,7 +24,11 @@ render() {
     <img src="../../homehero.jpg" alt="piranha" className={styles.container}/>
         <div className={styles.Nav}> 
         <h1>
-        <div className={styles.masthead}>Straight Talk Today</div> 
+        
+        <div className={styles.masthead}>
+        <img src="../../LOGO.jpg" alt="Straight talk today logo" className={styles.logoimg}/>
+        Straight Talk Today
+                </div> 
         </h1>
         <h2>
         <div className={styles.links}><a>About</a></div>

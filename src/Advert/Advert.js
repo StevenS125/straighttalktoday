@@ -13,13 +13,24 @@ class Advert extends Component {
 
   render() {
     return (
+<div>
+        <div id="myNav" className={styles.container}>
+        <img src="../../homehero.JPG" alt="piranha" className={styles.container}/>
+    <div className={styles.heroSlogan}>Have Kevin Holmes motivate your audience at your next event &nbsp; &nbsp; &nbsp;
+    <button className={styles.heroButton}>Learn How</button>
+    </div>
+            </div>
+
+
+
+
         <div className={styles.advertcontainer}>
             <h3>What We Offer</h3>
             <AdPane title="Motivational Speaking" content="From conception and strategy to design and implementation, Piranha Technologies builds and hosts premium websites for businesses, associations, government, and Fortune 500 companies" icon="fas fa-cloud fa-7x"></AdPane>
             <AdPane title="Life Coaching" content="Piranha Technologies' integrations team has the experience and expertise to seamlessly integrate any third party software that your organization utilizes in order to give your users the best online experience possible." icon="fas fa-puzzle-piece fa-7x"></AdPane>
             <AdPane title="Order my Book!" content="With the influx of smartphones, tablets, and everything in between, it's quickly become mandatory that your business is accessible on the go via a mobile site or app." icon="fas fa-mobile fa-7x"></AdPane>
         </div>
-
+</div>
     );
   }
 }

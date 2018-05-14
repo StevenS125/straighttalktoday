@@ -11,7 +11,7 @@ class Bio extends Component {
     return (
       <div>
           <div className={styles.aboutHero}>
-hello i am here
+          <img src="../../biophoto.jpg" alt="Straight talk today logo" className={styles.biopic}/>
           </div>
 <div className={styles.aboutPhoto}>
 

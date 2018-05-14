@@ -23,19 +23,16 @@ render() {
     <div id="myNav" className={styles.container}>
     <img src="../../homehero.JPG" alt="piranha" className={styles.container}/>
         <div className={styles.Nav}> 
-        <h1>
         
         <div className={styles.masthead}>
         <img src="../../LOGO.jpg" alt="Straight talk today logo" className={styles.logoimg}/>
         Straight Talk Today
                 </div> 
-        </h1>
-        <h2>
+        
         <div className={styles.links}><a>About</a></div>
         <div className={styles.links}><a>Contact</a></div> 
         <div className={styles.links}><a>Bio</a></div> 
         <div className={styles.links}><a>Partnerships</a></div>  
-</h2>
 <div className={styles.menurow}>
 <Burger
 					isOpen={this.state.open[1]}

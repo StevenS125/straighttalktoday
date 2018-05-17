@@ -25,15 +25,12 @@ class Contact extends Component {
     const state = this.state
     state[e.target.name] = e.target.value;
     this.setState(state);
-    console.log(this.state)
   }
 
   onSubmit = (e) => {
     e.preventDefault();
     // get our form data out of state
     const pData = this.state;
-    console.log(JSON.stringify(pData))
-    console.log(pData)
     fetch('https://ptemailserver.herokuapp.com/', {
     method: 'post',
     headers: {
@@ -42,7 +39,6 @@ class Contact extends Component {
     },
     body: JSON.stringify(pData)
   }).then(function(response) {
-    console.log( response.json());
   })
 
   this.state = {

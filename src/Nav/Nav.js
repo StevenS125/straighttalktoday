@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styles from "./Nav.module.scss";
 import Burger from './Burger'
+import { Link } from 'react-router-dom';
 
 
 class Header extends Component {
@@ -27,11 +28,8 @@ render() {
         <img src="../../LOGO.jpg" alt="Straight talk today logo" className={styles.logoimg}/>
         Straight Talk Today
                 </div> 
-        
-        <div className={styles.links}><a>About</a></div>
-        <div className={styles.links}><a>Contact</a></div> 
-        <div className={styles.links}><a>Bio</a></div> 
-        <div className={styles.links}><a>Partnerships</a></div>  
+        <Link className={styles.links}  to="/Bio">About</Link>
+        <Link className={styles.links} to="/">Home</Link>  
 <div className={styles.menurow}>
 <Burger
 					isOpen={this.state.open[1]}

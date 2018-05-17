@@ -8,13 +8,54 @@ class Contact extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: ''
+      
+      fname: '',
+      lname: '',
+      email: '',
+      msg: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  onChange = (e) => {
+    // Because we named the inputs to match their corresponding values in state, it's
+    // super easy to update the state
+    const state = this.state
+    state[e.target.name] = e.target.value;
+    this.setState(state);
+    console.log(this.state)
+  }
+
+  onSubmit = (e) => {
+    e.preventDefault();
+    // get our form data out of state
+    const pData = this.state;
+    console.log(JSON.stringify(pData))
+    console.log(pData)
+    fetch('https://ptemailserver.herokuapp.com/', {
+    method: 'post',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(pData)
+  }).then(function(response) {
+    console.log( response.json());
+  })
+
+  this.state = {
+      
+    fname: '',
+    lname: '',
+    email: '',
+    msg: ''
+  }
+
+  document.getElementById('form').reset()
+ }
+  
   handleChange(event) {
     this.setState({value: event.target.value});
   }
@@ -22,6 +63,7 @@ class Contact extends Component {
   handleSubmit(event) {
     event.preventDefault();
   }
+
 
   render() {
     return (
@@ -45,20 +87,20 @@ class Contact extends Component {
       <h2>Want to work with Kevin?</h2>
       </div>
 
-        <form action="#0">
+        <form id='form' onSubmit= {this.onSubmit}>
 
 <div>
-  <input type="text" id="first_name" name="first_name" required placeholder=" " />
+  <input onChange={this.onChange} type="text" id="first_name" name="fname" required placeholder=" " />
   <label htmlFor="first_name">First Name</label>
 </div>
 
 <div>
-  <input type="text" id="last_name" name="last_name" required placeholder=" " />
+  <input onChange={this.onChange} type="text" id="last_name" name="lname" required placeholder=" " />
   <label htmlFor="last_name">Last Name</label>
 </div>
 
 <div>
-  <input type="email" id="email" name="email" required placeholder=" " />
+  <input onChange={this.onChange} type="email" id="email" name="email" required placeholder=" " />
   <label htmlFor="email">Email Address</label>
   <div className={styles.requirements}>
     Must be a valid email address.
@@ -66,7 +108,7 @@ class Contact extends Component {
 </div>
 
 <div>
-  <textarea type="text" id="password" name="password" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{100,}" />
+  <textarea onChange={this.onChange} type="text" id="password" name="msg" required placeholder=" " pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{100,}" />
   <label htmlFor="text">Message</label>
   <div className={styles.requirements}>
     Your Message must be atleast 100 characters in length

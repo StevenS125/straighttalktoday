@@ -28,6 +28,7 @@ render() {
         <img src="../../LOGO.jpg" alt="Straight talk today logo" className={styles.logoimg}/>
         Straight Talk Today
                 </div> 
+                <Link className={styles.links} to="/Services">Services</Link>  
         <Link className={styles.links}  to="/Bio">About</Link>
         <Link className={styles.links} to="/">Home</Link>  
 <div className={styles.menurow}>

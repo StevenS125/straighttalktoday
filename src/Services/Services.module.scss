@@ -1,0 +1,32 @@
+.title {
+    text-align: center;
+
+}
+
+.seminars {
+    
+    background-color: whitesmoke;
+    height: 600px;
+
+    > h2 {
+        border-bottom: 2px solid black;
+        color: orangered;
+        padding-top: 3%
+    }
+    > .semi {
+        float: left;
+        background-color:white;
+        color: darkblue;
+        height: 360px;
+        width: 40%;
+        margin-left: 2%;
+        margin-right: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 5%;
+        border: 2px solid lightblue;
+        
+    }
+}
+
+ 

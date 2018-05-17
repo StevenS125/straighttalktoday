@@ -9,7 +9,8 @@ import Nav from './Nav/Nav';
 
 //styles
 import styles from './App.module.scss';
-import Advert from  './Advert/Advert'
+import Advert from  './Advert/Advert';
+import Services from  './Services/Services'
 
 //modules
 
@@ -23,6 +24,7 @@ class App extends Component {
           <Switch>
         <Route exact path="/" component={Advert}/>
         <Route path="/contact" component={Contact}/>
+        <Route path="/services" component={Services}/>
         <Route path="/bio" component={Bio}/>
         </Switch>
         <Contact />

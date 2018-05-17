@@ -30,7 +30,7 @@ render() {
         <div className={styles.links}><a>About</a></div>
         <div className={styles.links}><a>Contact</a></div> 
         <div className={styles.links}><a>Bio</a></div> 
-        <div className={styles.links}><a>Partnerships</a></div>  
+        <div className={styles.links}><a href="/services">Services</a></div>  
 </h2>
 <div className={styles.menurow}>
 <Burger

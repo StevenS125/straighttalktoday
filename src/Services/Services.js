@@ -13,7 +13,7 @@ class Services extends Component {
 
   render() {
     return (
-        <div>
+        <div className="container">
             <div>
               <h1 className={styles.title}>Services, Training and Development</h1>
             </div>

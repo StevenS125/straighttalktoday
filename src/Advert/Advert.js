@@ -26,9 +26,9 @@ class Advert extends Component {
 
         <div className={styles.advertcontainer}>
             <h3>What We Offer</h3>
-            <AdPane title="Motivational Speaking" content="From conception and strategy to design and implementation, Piranha Technologies builds and hosts premium websites for businesses, associations, government, and Fortune 500 companies" icon="fas fa-cloud fa-7x"></AdPane>
-            <AdPane title="Life Coaching" content="Piranha Technologies' integrations team has the experience and expertise to seamlessly integrate any third party software that your organization utilizes in order to give your users the best online experience possible." icon="fas fa-puzzle-piece fa-7x"></AdPane>
-            <AdPane title="Services training and development" content="With the influx of smartphones, tablets, and everything in between, it's quickly become mandatory that your business is accessible on the go via a mobile site or app." icon="fas fa-mobile fa-7x"></AdPane>
+            <AdPane title="Motivational Speaking" content="From conception and strategy to design and implementation, Piranha Technologies builds and hosts premium websites for businesses, associations, government, and Fortune 500 companies" icon="fas fa-chart-line fa-7x"></AdPane>
+            <AdPane title="Life Coaching" content="Piranha Technologies' integrations team has the experience and expertise to seamlessly integrate any third party software that your organization utilizes in order to give your users the best online experience possible." icon="fas fa-clipboard fa-7x"></AdPane>
+            <AdPane title="Services training and development" content="With the influx of smartphones, tablets, and everything in between, it's quickly become mandatory that your business is accessible on the go via a mobile site or app." icon="fas fa-shipping-fast fa-7x"></AdPane>
         </div>
 </div>
     );

@@ -13,10 +13,13 @@ class Services extends Component {
 
   render() {
     return (
-        <div className="container">
-            <div>
-              <h1 className={styles.title}>Services, Training and Development</h1>
+        <div >
+            <div className={styles.filler}>
+            <div className={styles.title}>
+            <h1>Services, Training &<br/>Development</h1>
             </div>
+            </div>
+            
             <div className={styles.seminars}>
               <h2>Youth Seminars</h2>
               <div className={styles.semi}>
@@ -51,7 +54,7 @@ class Services extends Component {
               </div>
             </div>
             <div className={styles.seminars}>
-            <h2>PERSONAL & PROFESSIONAL DEVELOPMENT SEMINARS</h2>
+            <h2>Personal & Professional Development Seminars</h2>
             <div className={styles.semi}>
               <h3>Make Your Job Work for YOU!</h3>
               <p>The purpose of this workshop is to inspire people to make the absolute most of their job/career. Going to work each day is not supposed to be a dreaded experience. Turn your frown into a smile by finding the hidden treasures in the workplace.</p>

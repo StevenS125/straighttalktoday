@@ -1,27 +1,68 @@
-.container {
+.filler {
+    // padding-top: 15%;
+    padding-bottom: 30%;
+    height: 300px;
+    background-color: black;
+    background-color: black;
+    color: white;
+
     
 }
 
-.title {
-    text-align: center;
-    padding-top: 60px
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+	background-color: #111;
+}
 
+.title {
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+    letter-spacing: 1px;
+    margin-bottom: 5%
+}
+
+h1 {
+	background-image: url(https://media.giphy.com/media/xT9IgwWOpd4sJVuDe0/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+}
+  
+
+h2 {
+    font-size: 40px
+}
+
+h3 {
+    font-size: 30px
 }
 
 .seminars {
     
-    background-color: whitesmoke;
+    background-color: black;
     height: 600px;
 
     > h2 {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid white;
         color: orangered;
-        padding-top: 3%
+        padding-top: 3%;
+        margin-top:0;
     }
     > .semi {
         float: left;
-        background-color:white;
-        color: darkblue;
+        background-color:black;
+        color: white;
         height: 360px;
         width: 40%;
         margin-left: 2%;
@@ -29,8 +70,16 @@
         padding-left: 2%;
         padding-right: 2%;
         padding-bottom: 5%;
-        border: 2px solid lightblue;
+        border: 2px solid white;
         
+    }
+
+    .semi:hover {
+        box-shadow: 0 30px 50px 0 rgba(235, 232, 232, 0.4), 0 30px 60px 0 rgba(243, 238, 238, 0.3);
+       
+
+
+
     }
 }
 

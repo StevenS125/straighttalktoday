@@ -33,9 +33,10 @@ h3 {
     float: left;
     margin-left: 1%;
     margin-right: 1%;
-    background-color: white;
+    background-color: black;
+    color: white;
     padding-top: 2%;
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.519), 0 0 0 0 rgba(255, 255, 255, 0.219);
 }
 
 .adMain:hover { 
@@ -45,7 +46,7 @@ h3 {
 .fas {
     padding-left: 0%;
     padding-right: 0%;
-    color: crimson;
+    color: #ff220c;
     text-align: center
 }
 
@@ -54,7 +55,7 @@ h3 {
     padding-bottom: 10%;
     padding-left: 7%;
     padding-right: 7%;
-    color: rgb(5, 54, 132);
+    color: white;
     font-family: 'Raleway', sans-serif;
     
 }

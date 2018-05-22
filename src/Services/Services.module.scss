@@ -2,8 +2,7 @@
     // padding-top: 15%;
     padding-bottom: 30%;
     height: 50px;
-    background-color: black;
-    background-color: black;
+    background-color: white;
     color: white;
 }
 
@@ -47,19 +46,19 @@ h3 {
 
 .seminars {
     
-    background-color: black;
+    background-color: white;
     height: 600px;
 
     > h2 {
-        border-bottom: 2px solid white;
-        color: #ff220c;
+        border-bottom: 2px solid #222E50;
+        color: #222E50;
         padding-top: 3%;
         margin-top:0;
     }
     > .semi {
         float: left;
-        background-color:black;
-        color: white;
+        background-color:white;
+        color: #222E50;
         height: 360px;
         width: 40%;
         margin-left: 2%;
@@ -67,12 +66,12 @@ h3 {
         padding-left: 2%;
         padding-right: 2%;
         padding-bottom: 5%;
-        border: 2px solid white;
+        border: 2px solid #222E50;
         
     }
 
     .semi:hover {
-        box-shadow: 0 30px 50px 0 rgba(235, 232, 232, 0.4), 0 30px 60px 0 rgba(243, 238, 238, 0.3);
+        box-shadow: 0 30px 50px 0 rgba(39, 39, 39, 0.322), 0 30px 60px 0 rgba(0, 0, 0, 0.192);
        
 
 

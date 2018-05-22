@@ -6,10 +6,10 @@
 }
 
 .forming {
-    background-color: black;
+    background-color: white;
     padding-top: 50px;
     padding-left: 5%;
-    color: black;
+    color: #222E50;
     text-align: left;
     float: left;
     height: 450px;
@@ -31,7 +31,7 @@ form {
     
     // Looks like placeholder
     > label {
-      opacity: 0.3;
+      color: #222E50;
       font-weight: bold;
       position: absolute;
       top: 22px;
@@ -101,7 +101,7 @@ form {
     display: block;
     width: 100%;
     margin: 20px 0;
-    background: crimson;
+    background: #222E50;
     color: white;
     border: 0;
     padding: 20px;
@@ -111,5 +111,5 @@ form {
 
 .head {
     text-align: center;
-    color: white;
+    color: #222E50;
 }

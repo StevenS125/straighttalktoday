@@ -4,6 +4,11 @@
     z-index: -3;
   }
 
+  h2 {
+      color: white;
+      margin-left: 10%;
+  }
+
   .heroSlogan {
     position: absolute;
     top: 150px;
@@ -45,6 +50,7 @@
     width: 90%;
     margin: auto;
     font-size: 20px;
+    padding-bottom: 40px;
 }
 
 .aboutPhoto {

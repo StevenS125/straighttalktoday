@@ -2,8 +2,8 @@
     // padding-top: 15%;
     padding-bottom: 30%;
     height: 50px;
-    background-color: white;
-    color: #222E50;
+    background-color: #222E50;
+    color: white;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
@@ -14,7 +14,7 @@ body {
 .title {
 	font-family: "Montserrat";
 	text-align: center;
-	color: #222E50;
+	color: white;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -41,25 +41,25 @@ h2 {
 }
 
 h3 {
-    color: #222E50;
+    color: white;
     font-size: 30px
 }
 
 .seminars {
     
-    background-color: white;
+    background-color: #222E50;
     height: 600px;
 
     > h2 {
-        border-bottom: 2px solid #222E50;
-        color: #222E50;
+        border-bottom: 2px solid white;
+        color: white;
         padding-top: 3%;
         margin-top:0;
     }
     > .semi {
         float: left;
-        background-color:white;
-        color: #222E50;
+        background-color:#222E50;
+        color: white;
         height: 360px;
         width: 40%;
         margin-left: 2%;
@@ -67,7 +67,7 @@ h3 {
         padding-left: 2%;
         padding-right: 2%;
         padding-bottom: 5%;
-        border: 2px solid #222E50;
+        border: 2px solid white;
         
     }
 

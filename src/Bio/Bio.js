@@ -17,7 +17,7 @@ class Bio extends Component {
     </div>
 
           </div>
-          <h2>About Kevin Holmes</h2>
+          <div className={styles.abouthead}>About Kevin Holmes</div>
 <div className={styles.aboutPhoto}>
           <img src="../../candid.jpg" alt="Kevin Holmes Posing in Charlotte" className={styles.candidPhoto}/>
 </div>

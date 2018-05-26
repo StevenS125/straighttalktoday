@@ -25,14 +25,15 @@ body {
 }
 
 h1 {
-	background-image: url(https://media.giphy.com/media/26BRvIYDe4ILO60Ni/giphy.gif);
+	background-image: url(https://media.giphy.com/media/G3tGQZSkEAoUM/giphy.gif);
 	color: transparent;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	text-transform: uppercase;
 	font-size: 90px;
 	line-height: 100px;
-	margin: 10px 0;
+    margin: 10px 0;
+    
 }
   
 
@@ -81,3 +82,102 @@ h3 {
 }
 
  
+
+@media only screen and (max-width: 800px) {
+
+
+    .filler {
+        // padding-top: 15%;
+        padding-bottom: 2%;
+        height: 300px;
+        background-color: #222E50;
+        color: white;
+    
+        
+    }
+    
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    body {
+        background-color: #222E50;
+    }
+    
+    .title {
+        font-family: "Montserrat";
+        text-align: center;
+        color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        letter-spacing: 1px;
+        margin-bottom: 5%
+    }
+    
+    h1 {
+        background-image: url(https://media.giphy.com/media/26BRvIYDe4ILO60Ni/giphy.gif);
+        // background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        font-size: 40px;
+        padding-top: 270px;
+        line-height: .75;
+        margin: 10px 0;
+        font-family: 'Raleway';
+    
+    }
+      
+    
+    h2 {
+        font-size: 35px;
+        font-family: 'Raleway';
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 30px;
+        font-family: 'Raleway';
+    }
+    
+    .seminars {
+        
+        background-color: #222E50;
+        > div {
+        height: 600px;
+        }
+        > h2 {
+            border-bottom: 2px solid white;
+            color: white;
+            padding-top: 3%;
+            
+            font-family: 'Raleway';
+        }
+        > .semi {
+            float: left;
+            background-color: #222E50;
+            color: white;
+            height: 475px;
+            width: 90%;
+            margin-left: 2%;
+            margin-right: 2%;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 5%;
+            margin-bottom: 5%;
+            border: 2px solid white;
+            font-family: 'Raleway';
+            
+        }
+    
+        .semi:hover {
+            box-shadow: 0 15px 25px 0 rgba(235, 232, 232, 0.692), 0 30px 40px 0 rgba(243, 238, 238, 0.55);
+           
+    
+    
+    
+        }
+    }
+
+}

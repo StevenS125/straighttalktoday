@@ -186,4 +186,17 @@ h3 {
         width: 100%;
         border-bottom: none;
     }
+
+    .adMain {
+        width: 95%;
+        min-height: 250px;
+        height: auto;
+        float: left;
+        margin-left: 1%;
+        margin-right: 1%;
+        background-color: white;
+        color: #222E50;
+        padding-top: 2%;
+        box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.582), 0 0 0 0 rgba(255, 255, 255, 0.219);
+    }
   }

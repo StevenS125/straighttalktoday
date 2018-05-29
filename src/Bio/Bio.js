@@ -12,7 +12,7 @@ class Bio extends Component {
       <div>
           <div className={styles.aboutHero}>
           <img src="../../biophoto.jpg" alt="Straight talk today logo" className={styles.biopic}/>
-          <div className={styles.heroSlogan}>Straight Talk but Straight Understanding &nbsp; &nbsp; &nbsp;
+          <div className={styles.heroSlogan}>Straight Talk for Straight Understanding &nbsp; &nbsp; &nbsp;
           <span>-Kevin Holmes</span>
     </div>
 

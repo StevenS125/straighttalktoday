@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 //components
 
@@ -17,7 +18,10 @@ class Advert extends Component {
         <div id="myNav" className={styles.container}>
         <img src="../../homehero.JPG" alt="piranha" className={styles.container}/>
     <div className={styles.heroSlogan}>Have Kevin Holmes motivate your audience at your next event &nbsp; &nbsp; &nbsp;
+   
+   <Link to="/contact">
     <button className={styles.heroButton}>Learn How</button>
+    </Link>
     </div>
             </div>
 

@@ -67,3 +67,31 @@
     margin: 30px;
     width: 100%;
 }
+
+@media (max-width: 800px) {
+    .aboutPhoto {
+        float: left;
+        width: 85%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .textLeft {
+        float: left;
+        color: white;
+        margin-top: 30px;
+        margin-left: 5%;
+        width: 90%;
+        font-size: 20px;
+
+    }
+
+    .textFull {
+        color: white;
+        width: 90%;
+        margin: auto;
+        font-size: 30px;
+        padding-bottom: 40px;
+    }
+
+}

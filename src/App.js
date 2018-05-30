@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 //components
+import Contacter from './Contacter/Contacter';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import Bio from './Bio/Bio';
@@ -23,7 +24,7 @@ class App extends Component {
         <Nav />
           <Switch>
         <Route exact path="/" component={Advert}/>
-        <Route path="/contact" component={Contact}/>
+        <Route path="/contact" component={Contacter}/>
         <Route path="/services" component={Services}/>
         <Route path="/bio" component={Bio}/>
         </Switch>

@@ -71,7 +71,7 @@ class Contact extends Component {
         showIndex={true}
         slideInterval={4000}
         defaultIndex={1}
-        slides={['../../sample.jpg', '../../sample.jpg', '../../sample.jpg']}
+        slides={['../../sample.jpg', '../../sample2.jpg', '../../sample3.jpg']}
         effect={'fade'}
         height={'100%'}
         width={'100%'}

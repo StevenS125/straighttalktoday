@@ -30,7 +30,7 @@ class Advert extends Component {
 
         <div className={styles.advertcontainer}>
             <h3>What We Offer</h3>
-            <AdPane title="Motivational Speaking" content={["embracing your handicap", "reaching your full potential", "discovering who you are", "discovering who you are", "identifying your strengths and weaknesses"]}
+            <AdPane title="Motivational Speaking" content={["embracing your handicap", "reaching your full potential", "discovering who you are",  "identifying your strengths and weaknesses"]}
             icon="fas fa-chart-line fa-7x"></AdPane>
             <AdPane title="Life Coaching 1 on 1" content={["Taking control of your finances", "becoming in tune with your abilities", "knowing your worth"]} icon="fas fa-clipboard fa-7x"></AdPane>
             <AdPane title="Services training and development" content={["Real estate investment", "planning for your future", "money management"]} icon="fas fa-shipping-fast fa-7x"></AdPane>

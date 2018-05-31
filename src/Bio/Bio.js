@@ -1,7 +1,32 @@
 import React, { Component } from 'react';
 import styles from './Bio.module.scss';
 
+import Gallery from 'react-photo-gallery';
 
+ class Photo extends Component {
+    render() {
+	return (
+	    <Gallery photos={PHOTO_SET} />
+	);
+    }
+}
+const PHOTO_SET = [
+  {
+    src: '../../kh1.JPG',
+    width: 4,
+    height: 3
+  },
+  {
+    src: '../../kh2.JPG',
+    width: 1,
+    height: 1
+  },
+  {
+    src: '../../kh3.png',
+    width: 8,
+    height: 3
+  }
+];
 
 
 class Bio extends Component {
@@ -48,6 +73,7 @@ Kevin resides in Queens, New York and remains employed by the city of New York a
 
 <br></br><br></br>
           </div>
+          <Photo></Photo>
 
 </div>
     );

@@ -26,7 +26,7 @@ render() {
         
         <div className={styles.masthead}>
         <img src="../../LOGO.jpg" alt="Straight talk today logo" className={styles.logoimg}/>
-        Straight Talk Today
+        Straight Talk Consulting Inc
                 </div> 
                 <Link className={styles.links} to="/Contact">Contact</Link> 
                 <Link className={styles.links} to="/Services">Services</Link>  

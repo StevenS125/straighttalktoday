@@ -10,7 +10,7 @@ export default class Contact extends Component {
         return (
           <div className={styles.footContainer}>
           <div className={styles.copyright}>
-          &#169; 2018 Piranha Technologies
+          &#169; Straight Talk Consulting Inc
               </div>
               </div>
         )

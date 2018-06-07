@@ -147,7 +147,7 @@
         top: 0;
         left: 0;
         height: 80px;
-        z-index: 1;
+        z-index: 0;
         width: 100%;
         border-bottom: none;
     }
@@ -158,7 +158,7 @@
         width: 100%;
         margin: 10px 15px 10px 15px;
         font-family: 'Raleway';
-        font-size: 20px;
+        font-size: 40px;
         font-weight: bold;
         text-decoration: 'none';
     }
@@ -166,9 +166,10 @@
 
 .navTitle {
     visibility: visible;
+    height:100px;
     color: white;
     float: left;
-    font-size: 25px;
+    font-size: 55px;
     font-family: 'Monoton', cursive;
     text-align: center;
     background-color: #222E50;
@@ -181,10 +182,10 @@
 }
 
 .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
+    width: 85px;
+    height: 15px;
     background-color: white;
-    margin: 6px 5px;
+    margin: 21px 20px;
     transition: 0.4s;
 }
 

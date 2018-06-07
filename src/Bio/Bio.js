@@ -25,6 +25,21 @@ const PHOTO_SET = [
     src: '../../kh3.png',
     width: 8,
     height: 3
+  },
+  {
+    src: '../../redhookbg.jpg',
+    width: 5,
+    height: 4
+  },
+  {
+    src: '../../journeycollage.jpg',
+    width: 5,
+    height: 4
+  },
+  {
+    src: '../../tshirtback.jpg',
+    width: 5,
+    height: 4
   }
 ];
 
@@ -54,11 +69,11 @@ During his childhood, Kevin had some challenges in school that eventually led to
 <br></br><br></br>
 Kevin worked for several companies before entering an apprenticeship program that eventually led to his current job with the city as an Electrician. Utilizing his experience as an electrician, Kevin started Holmes Improvement Company.
 <br></br><br></br>
-Folded Corner: Awards & Recognition:    “8 Most Handsome and Brilliant Men of Mecklenburg” – CityPolitical Magazine 2006    “Above and Beyond the Call of Duty” – Local #3 International Brotherhood of Electrical Workers    “Brave Act of Heroism” – Department of Environmental Protection  
-<br></br><br></br>   
 </div>
 
 <div className={styles.textFull}>
+Folded Corner: Awards & Recognition:    “8 Most Handsome and Brilliant Men of Mecklenburg” – CityPolitical Magazine 2006    “Above and Beyond the Call of Duty” – Local #3 International Brotherhood of Electrical Workers    “Brave Act of Heroism” – Department of Environmental Protection  
+<br></br><br></br>   
    
 In 2000, Kevin became a licensed real estate agent.  In 2005 Kevin earned his North Carolina Mortgage Loan Originators license.
 <br></br><br></br>

@@ -2,19 +2,19 @@
     // padding-top: 15%;
     padding-bottom: 30%;
     height: 50px;
-    background-color: #222E50;
+    background-color: white;
     color: white;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
-	background-color: #222E50;
+	background-color: white;
 }
 
 .title {
 	font-family: "Montserrat";
 	text-align: center;
-	color: white;
+	color: black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-	background-image: url(https://media.giphy.com/media/G3tGQZSkEAoUM/giphy.gif);
+	background-color: black;
 	color: transparent;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
@@ -43,18 +43,18 @@ h2 {
 }
 
 h3 {
-    color: white;
+    color: black;
     font-size: 30px
 }
 
 .seminars {
     
-    background-color: #222E50;
+    background-color: white;
     height: 600px;
 
     > h2 {
-        border-bottom: 2px solid white;
-        color: white;
+        border-bottom: 2px solid #222E50;
+        color: #222E50;
         padding-top: 3%;
         margin-top:0;
     }
@@ -64,8 +64,8 @@ h3 {
         color: white;
         height: 390px;
         width: 40%;
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
         padding-left: 2%;
         padding-right: 2%;
         padding-bottom: 5%;
@@ -91,7 +91,7 @@ h3 {
         // padding-top: 15%;
         padding-bottom: 2%;
         height: 300px;
-        background-color: #222E50;
+        background-color: white;
         color: white;
     
         
@@ -99,13 +99,13 @@ h3 {
     
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
     body {
-        background-color: #222E50;
+        background-color: white;
     }
     
     .title {
         font-family: "Montserrat";
         text-align: center;
-        color: #FFF;
+        color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -116,7 +116,7 @@ h3 {
     }
     
     h1 {
-        background-image: url(https://media.giphy.com/media/26BRvIYDe4ILO60Ni/giphy.gif);
+        background-color: black;
         // background-size: cover;
         color: transparent;
         -moz-background-clip: text;
@@ -144,9 +144,9 @@ h3 {
     
     .seminars {
         
-        background-color: #222E50;
+        background-color: white;
         > div {
-        height: 600px;
+        height: 800px;
         }
         > h2 {
             border-bottom: 2px solid white;
@@ -161,8 +161,8 @@ h3 {
             color: white;
             height: 500px;
             width: 90%;
-            margin-left: 2%;
-            margin-right: 2%;
+            margin-left: 5%;
+            margin-right: 5%;
             padding-left: 2%;
             padding-right: 2%;
             padding-bottom: 5%;

@@ -9,7 +9,8 @@
     "react-photo-gallery": "^6.0.27",
     "react-router-dom": "^4.2.2",
     "react-sleek-photo-gallery": "^0.1.2",
-    "react-slideshowz": "^0.0.50"
+    "react-slideshowz": "^0.0.50",
+    "reactstrap": "^6.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

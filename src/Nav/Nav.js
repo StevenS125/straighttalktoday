@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styles from "./Nav.module.scss";
-import Burger from './Burger'
 import { Link } from 'react-router-dom';
 
 
@@ -8,20 +7,53 @@ class Header extends Component {
         constructor(props) {
                 super(props);
                 this.state = {
-                  open: [false]
+                        arrayList: ['Straight Talk Consulting Inc'],
+                        open: false
                 };
-} 
-
-handleClick(id) {
-        let { open } = this.state;
-this.setState({
-                open: [...open.slice(0, id), !open[id], ...open.slice(id + 1)]
-        });
 }
 
+
+openList = () => {
+        return (
+          <ul style={{ listStyle: 'none'}}>
+            <li onClick={ this.closeList }><Link className={styles.links} to="/Contact">Contact</Link></li>
+            <li onClick={ this.closeList }><Link className={styles.links} to="/Services">Services</Link></li>  
+       <li onClick={ this.closeList }><Link className={styles.links}  to="/Bio">About</Link></li>
+       <li onClick={ this.closeList }><Link className={styles.links} to="/">Home</Link></li>  
+          </ul>
+        );
+      }
+
+      closeList = () => {
+              this.setState({
+                      open: false
+              });
+      }
+    
+      openDropDown = (event) => {
+        console.log(event.target.innerText);
+        if (!this.state.open) {
+                this.setState({
+                        open: true,
+                      });
+        } else {
+                this.closeList()
+        }
+        
+      }
+
+      openBurger = (x) => {
+              x.classList.toggle('change');
+      }
+
+
 render() {
+
+
+
         return (
     <div id="myNav" className={styles.container}>
+
         <div className={styles.Nav}> 
         
         <div className={styles.masthead}>
@@ -33,19 +65,34 @@ render() {
         <Link className={styles.links}  to="/Bio">About</Link>
         <Link className={styles.links} to="/">Home</Link>  
 <div className={styles.menurow}>
-<Burger
-					isOpen={this.state.open[1]}
-					menuClicked={this.handleClick.bind(this, 1)}
-					width={54}
-					height={45}
-					strokeWidth={3}
-					rotate={0}
-					color='white'
-					borderRadius={5}
-					animationDuration='0.4'
-				/>
                                 </div>
         </div>
+
+              <div className={styles.navTitle}>
+              <div onClick={ this.openDropDown } className={styles.burgContainer}>
+  <div className={styles.bar1}></div>
+  <div className={styles.bar2}></div>
+  <div className={styles.bar3}></div>
+          {
+          this.state.arrayList.map((name, index) => {
+            return (<div key={`${name}-${index}`}>
+            <span>
+            </span>
+              { this.state.open ? this.openList() : false }
+          </div>);
+          })
+        } 
+  </div>
+        {
+          this.state.arrayList.map((name, index) => {
+            return (<div key={`${name}-${index}`}>
+            <span >
+              { name }
+            </span>
+          </div>);
+          })
+        } 
+      </div>
         </div>
 );
 }

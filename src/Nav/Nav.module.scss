@@ -1,3 +1,8 @@
+.mobileNav {
+    visibility: hidden;
+}
+
+
 .Nav {
     position: absolute;
     top: 0;
@@ -102,6 +107,22 @@
     margin-top: 20px;
 }
 
+.navTitle {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 1;
+    width: 100%;
+    color: white;
+    float: left;
+    font-size: 25px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    background-color: none;
+}
+
 
   @media (max-width: 800px) {
     .menurow {
@@ -116,7 +137,12 @@
         visibility: visible;
     }
 
+    .mobileNav {
+        visibility: visible;
+    }
+
     .Nav {
+        visibility: hidden;
         position: absolute;
         top: 0;
         left: 0;
@@ -125,4 +151,53 @@
         width: 100%;
         border-bottom: none;
     }
+
+    .links {
+        color: white;
+        float: left;
+        width: 100%;
+        margin: 10px 15px 10px 15px;
+        font-family: 'Raleway';
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: 'none';
+    }
+
+
+.navTitle {
+    visibility: visible;
+    color: white;
+    float: left;
+    font-size: 25px;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    background-color: #222E50;
+}
+
+.burgContainer {
+    cursor: pointer;
+    float: left;
+    color: rgba(0, 0, 0, 0.0)
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 5px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
   }

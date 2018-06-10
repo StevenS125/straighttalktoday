@@ -139,6 +139,7 @@ h3 {
 
 
 .container {
+    margin-top: 0;
     height: 100%;
     width: 100%;
     z-index: -3;
@@ -165,6 +166,14 @@ h3 {
 
 
   @media (max-width: 800px) {
+
+    .container {
+        margin-top: 100px;
+        height: 100%;
+        width: 100%;
+        z-index: -3;
+      }
+
     .menurow {
         height: 80vh;
         display: flex;
@@ -198,5 +207,21 @@ h3 {
         color: #222E50;
         padding-top: 2%;
         box-shadow: 0 0 16px 0 rgba(255, 255, 255, 0.582), 0 0 0 0 rgba(255, 255, 255, 0.219);
+    }
+
+    .heroSlogan {
+        position: absolute;
+        top: 200px;
+        left: 20px;
+        width: 45%;
+        z-index: 1;
+        text-align: center;
+        padding: 10px;
+        font-family: Raleway;
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
     }
   }

@@ -69,6 +69,30 @@
 }
 
 @media (max-width: 800px) {
+
+    .biopic {
+        margin-top: 200px;
+        height: 100%;
+        width: 100%;
+        z-index: -3;
+      }
+
+      .heroSlogan {
+        position: absolute;
+        top: 250px;
+        left: 50px;
+        width: 45%;
+        z-index: 1;
+        text-align: center;
+        padding: 10px;
+        font-family: Raleway;
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+    }
+
     .aboutPhoto {
         float: left;
         width: 85%;

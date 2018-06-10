@@ -115,6 +115,7 @@ class Contact extends Component {
 
 </form>
         </div>
+        <br></br>
 </div>
     );
   }

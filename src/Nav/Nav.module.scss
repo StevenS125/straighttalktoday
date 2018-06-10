@@ -85,7 +85,7 @@
 .container {
     height: 100%;
     width: 100%;
-    z-index: -3;
+    z-index: 100;
   }
 
   .menurow {
@@ -154,19 +154,22 @@
 
     .links {
         color: white;
-        float: left;
-        width: 100%;
+        float: right;
+        width: 600px;
         margin: 10px 15px 10px 15px;
         font-family: 'Raleway';
         font-size: 40px;
         font-weight: bold;
         text-decoration: 'none';
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 100;
+
     }
 
 
 .navTitle {
     visibility: visible;
-    height:100px;
+    height:200px;
     color: white;
     float: left;
     font-size: 55px;
@@ -178,7 +181,11 @@
 .burgContainer {
     cursor: pointer;
     float: left;
-    color: rgba(0, 0, 0, 0.0)
+    z-index: 100;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+
 }
 
 .bar1, .bar2, .bar3 {

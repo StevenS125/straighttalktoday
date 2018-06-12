@@ -84,7 +84,7 @@ That act earned Kevin several awards for heroism.  But the greatest reward that 
 <br></br><br></br>
 Kevin believes that every person has a purpose, and his goal is to help individuals, especially young people, reach their full potential.  His father used to always say to him “Son, you may be slow but you are sure.”  Those words have been a source of encouragement for Kevin throughout his life.  Kevin has succeeded in spite of many challenges and he strives to encourage others to do the same.
 <br></br><br></br>
-Kevin resides in Queens, New York and remains employed by the city of New York at the Department of Environmental Protection as an electrician.  He is a Real Estate Investor and he is currently writing a book: Daddy I’m the Man You Could Have Been.  He mentors local youth and speaks to young people about reaching their goals.  His motto is “straight talk for straight understanding.”
+Kevin resides in Queens, New York and remains employed by the city of New York at the Department of Environmental Protection as an electrician.  He is a Real Estate Investor and wrote a book: Daddy I’m the Man You Could Have Been.  He mentors local youth and speaks to young people about reaching their goals.  His motto is “straight talk for straight understanding.”
 
 <br></br><br></br>
           </div>

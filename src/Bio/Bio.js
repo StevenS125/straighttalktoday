@@ -17,7 +17,7 @@ const PHOTO_SET = [
     height: 3
   },
   {
-    src: '../../kh2.JPG',
+    src: '../../kh2.jpg',
     width: 1,
     height: 1
   },

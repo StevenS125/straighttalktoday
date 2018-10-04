@@ -10,6 +10,8 @@ import Nav from './Nav/Nav';
 import Events from './Events/Events';
 import Services from  './Services/Services'
 import Advert from  './Advert/Advert';
+import Update from './UpdateEvent/Update'
+
 
 
 //styles
@@ -39,6 +41,7 @@ class App extends Component {
         <Route path="/contact" component={Contacter}/>
         <Route path="/services" component={Services}/>
         <Route path="/bio" component={Bio}/>
+        <Route path="/update" component={Update}/>
         </Switch>
         <Contact />
         <Footer />

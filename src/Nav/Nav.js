@@ -16,12 +16,14 @@ class Header extends Component {
 
 openList = () => {
         return (
+                <div className={styles.listContainer}>
           <ul style={{ listStyle: 'none'}}>
             <li onClick={ this.closeList }><Link className={styles.links} to="/Contact">Contact</Link></li>
             <li onClick={ this.closeList }><Link className={styles.links} to="/Services">Services</Link></li>  
        <li onClick={ this.closeList }><Link className={styles.links}  to="/Bio">About</Link></li>
        <li onClick={ this.closeList }><Link className={styles.links} to="/">Home</Link></li>  
           </ul>
+          </div>
         );
       }
 
@@ -77,8 +79,6 @@ render() {
           {
           this.state.arrayList.map((name, index) => {
             return (<div key={`${name}-${index}`}>
-            <span>
-            </span>
               { this.state.open ? this.openList() : false }
           </div>);
           })

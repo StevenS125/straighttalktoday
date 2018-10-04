@@ -155,16 +155,24 @@ html, body {
         border-bottom: none;
     }
 
+    .listContainer {
+        height: 600px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
     .links {
         color: white;
         float: right;
-        width: 600px;
-        margin: 10px 15px 10px 15px;
+        width: 90%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-family: 'Raleway';
         font-size: 40px;
         font-weight: bold;
         text-decoration: 'none';
-        background-color: rgba(0, 0, 0, 0.4);
         z-index: 100;
 
     }
@@ -184,19 +192,23 @@ html, body {
 .burgContainer {
     cursor: pointer;
     float: left;
-    z-index: 100;
     margin-left: 20px;
     margin-top: 20px;
-    background-color: #222E50;
+    background-color: white;
 
 }
 
 .bar1, .bar2, .bar3 {
     width: 85px;
     height: 15px;
-    background-color: white;
+    background-color: #222E50;
     margin: 21px 20px;
     transition: 0.4s;
+}
+
+.bar1:hover {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .change .bar1 {

@@ -14,52 +14,45 @@ class Events extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
-      event: [
-        {
-          name: "1",
-          logdate: "2",
-          address: "3"
-        },
-        {
-          name: "4",
-          logdate: "5",
-          address: "6"
-        }
-      ] 
+      event: []
     };
-      this.getApi = this.getApi.bind(this)
-
-
-  }
-
-  componentDidMount () {
-this.getApi()
-
-  }
-
-    getApi () {
-let self = this
- fetch("https://sttapi.herokuapp.com/events/?format=json")
+      
+      // this.createTable = this.createTable.bind(this);
+      console.log(this.state)
+     
     
-  .then(function(res) {
-    return res.json();
-  })
-  .then(function(myJson) {
-      self.setState({
+      }
+     
 
-       event: JSON.stringify(myJson)
-    })}
-    )
-    console.log(this.state);
-  }
+      componentDidMount(){
+        
+        fetch("https://sttapi.herokuapp.com/events/?format=json").then((res) => res.json())
+            .then((myjson) => this.setState({event: JSON.stringify(myjson)}) 
+            )
+          console.log(this.state)
+          }
+         
+
+        
+
   
-// After component mounts we build our values of events table   
+
+
+
   
+
+
+  
+  
+// After component mounts we build our values of events table  
+// componentDidMount = () => {
+//   this.createTable()
+// }
+
  createTable = () => {
     let table = []
     // Outer loop to create parent
-    for (let i = 0; i < this.state.event.length; i++) {
+    for (let i = 0; i < 2; i++) {
       let children = [];
       let children2 = [];
       let children3 = []
@@ -84,10 +77,11 @@ let self = this
 
 
 
+
   render() {
     return (
         <div className={styles.eMain}>
-        <h4 className={styles.eHead}>{this.state.event.length}</h4>
+        <h4 className={styles.eHead}>Upcoming Events</h4>
         
         <Table hover>
         <thead>
@@ -99,7 +93,7 @@ let self = this
         </thead>
         <tbody>
           
-        {this.createTable()}
+       
           <tr>
             <td>Youth Summit</td>
             <td>October 6th 8:30AM-12:30PM</td>

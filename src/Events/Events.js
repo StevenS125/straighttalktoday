@@ -26,9 +26,24 @@ class Events extends Component {
         </thead>
         <tbody>
           <tr>
-            <td>Investing in Real Estate Outside of New York</td>
-            <td>June 21st 6:00 PM</td>
-            <td>Catherine & Count Basie Middle School 72,<br></br> 133-25 Guy R. Brewer Blvd., Rm. 209, 1 Jamaica, Ny 11434</td>
+            <td>Youth Summit</td>
+            <td>October 6th 8:30AM-12:30PM</td>
+            <td>Chestnut Ridge Middle School,<br></br> NY-45, Chestnut Ridge, NY</td>
+          </tr>
+          <tr>
+            <td>Workshop : Securing the Bag, Becoming Money Smart <br></br>Investing in Real Estate Outside of New York Part 1</td>
+            <td>October 6th 11:00AM (45 mins)</td>
+            <td>Chestnut Ridge Middle School,<br></br> NY-45, Chestnut Ridge, NY</td>
+          </tr>
+          <tr>
+            <td>Youth Summit</td>
+            <td>October 11th 8:30AM-12:30PM</td>
+            <td>Chestnut Ridge Middle School,<br></br> NY-45, Chestnut Ridge, NY</td>
+          </tr>
+          <tr>
+            <td>Workshop : Securing the Bag, Becoming Money Smart <br></br>Investing in Real Estate Outside of New York Part 2</td>
+            <td>October 11th 11:00AM (45 mins)</td>
+            <td>Chestnut Ridge Middle School<br></br> NY-45, Chestnut Ridge, NY</td>
           </tr>
         </tbody>
       </Table>

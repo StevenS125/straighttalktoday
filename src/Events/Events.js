@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Table } from 'reactstrap';
 
+import Moment from 'react-moment';
+
 //components
 
 //styles
@@ -67,7 +69,9 @@ createTable = () => {
     let children3 = []
     //Inner loop to create children
       children.push(<td>{`${this.state.event[i].name}`}</td>);
-      children2.push(<td>{`${this.state.event[i].logdate}`}</td>);
+      children2.push(<td><Moment format="YYYY/MM/DD hh:mm A">
+      {`${this.state.event[i].logdate}`}
+  </Moment></td>);
       children3.push(<td>{`${this.state.event[i].address}`}</td>);
       table.push(<tr>{children}{children2}{children3}</tr>)
     }

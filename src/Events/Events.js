@@ -18,28 +18,24 @@ class Events extends Component {
     };
       
       this.createTable = this.createTable.bind(this);
-         
+      this.getEvents = this.getEvents.bind(this);
+      this.getEvents();  
     
       }
      
 
-   componentWillMount() {
-     this.getEvents()
-   }
+ 
 
-   componentDidMount() {
-  setTimeout(() => {
-    console.log(this.state.event[0][0].name);
-  }, 4000);
+ 
   
-  }
+  
 
 
 getEvents() {
           fetch("https://sttapi.herokuapp.com/events/?format=json")
           .then((res) => res.json())
             .then((myjson) => {this.setState({
-              event: [myjson]
+              event: myjson
             });
             
           } )
@@ -62,21 +58,23 @@ getEvents() {
 // }
 
 createTable = () => {
+  if (this.state.event[0]) {
   let table = []
   // Outer loop to create parent
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < this.state.event.length; i++) {
     let children = [];
     let children2 = [];
     let children3 = []
     //Inner loop to create children
-      children.push(<td>{`${this.state.event[0][i].name}`}</td>);
-      children2.push(<td>{`${this.state.event[0][i].logdate}`}</td>);
-      children3.push(<td>{`${this.state.event[0][i].address}`}</td>);
+      children.push(<td>{`${this.state.event[i].name}`}</td>);
+      children2.push(<td>{`${this.state.event[i].logdate}`}</td>);
+      children3.push(<td>{`${this.state.event[i].address}`}</td>);
       table.push(<tr>{children}{children2}{children3}</tr>)
     }
     
   
   return table
+  }
 }
 
 
@@ -103,12 +101,8 @@ createTable = () => {
           </tr>
         </thead>
         <tbody>
+          { this.createTable() }
           
-          <tr>
-            <td>Youth Summit</td>
-            <td>October 6th 8:30AM-12:30PM</td>
-            <td>Chestnut Ridge Middle School,<br></br> NY-45, Chestnut Ridge, NY</td>
-          </tr>
 
         </tbody>
       </Table>

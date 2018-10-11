@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Table } from 'reactstrap';
+import moment from 'moment';
 
 //components
 
 //styles
 import styles from './Events.module.scss';
-
-
-
 
 
 class Events extends Component {
@@ -23,14 +21,7 @@ class Events extends Component {
     
       }
      
-
- 
-
- 
-  
-  
-
-
+// make our API call and set our state to the events object for table
 getEvents() {
           fetch("https://sttapi.herokuapp.com/events/?format=json")
           .then((res) => res.json())
@@ -41,21 +32,8 @@ getEvents() {
           } )
 }
 
-        
-
-  
-
-
-
-  
-
-
-  
-  
-// After component mounts we build our values of events table  
-// componentDidMount = () => {
-//   this.createTable()
-// }
+       
+// Builds our table with values from API after API is called upon
 
 createTable = () => {
   if (this.state.event[0]) {
@@ -67,7 +45,7 @@ createTable = () => {
     let children3 = []
     //Inner loop to create children
       children.push(<td>{`${this.state.event[i].name}`}</td>);
-      children2.push(<td>{`${this.state.event[i].logdate}`}</td>);
+      children2.push(<td className={styles.boxformat}>{`${moment(this.state.event[i].logdate).format('MMMM Do YYYY, h:mm a')}`}</td>);
       children3.push(<td>{`${this.state.event[i].address}`}</td>);
       table.push(<tr>{children}{children2}{children3}</tr>)
     }

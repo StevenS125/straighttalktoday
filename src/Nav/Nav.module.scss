@@ -53,10 +53,13 @@ html, body {
 }
 
 .masthead {
+    position: fixed;
+    top: 5px;
     color: white;
     float: left;
     font-size: 40px;
-    margin: -25px 15px 10px 15px;
+    line-height: 50px;
+    margin: 0px 0px 0px 5px;
     font-family: 'Monoton', cursive;
     text-align: center;
 }
@@ -104,10 +107,11 @@ html, body {
 }
 
 .logoimg {
+
     height: 50px;
     border-radius: 50%;
-    margin-right: 30px;
-    margin-top: 20px;
+    margin-right: 10px;
+    margin-top: 0px;
 }
 
 .navTitle {

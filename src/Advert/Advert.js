@@ -6,10 +6,6 @@ import {Link} from 'react-router-dom';
 //styles
 import styles from './Advert.module.scss';
 
-
-
-
-
 class Advert extends Component {
 
   render() {
@@ -18,16 +14,11 @@ class Advert extends Component {
         <div id="myNav" className={styles.container}>
         <img src="../../homehero.JPG" alt="piranha" className={styles.container}/>
     <div className={styles.heroSlogan}>Have Kevin Holmes motivate your audience at your next event &nbsp; &nbsp; &nbsp;
-   
    <Link to="/contact">
     <button className={styles.heroButton}>Learn How</button>
     </Link>
     </div>
             </div>
-
-
-
-
         <div className={styles.advertcontainer}>
             <h3>What We Offer</h3>
             <AdPane title="Motivational Speaking" content={["embracing your handicap", "reaching your full potential", "discovering who you are",  "identifying your strengths and weaknesses"]}
@@ -73,7 +64,6 @@ class AdPane extends Component {
                     }
                 </div>
             </div>
-
     );
   }
 }

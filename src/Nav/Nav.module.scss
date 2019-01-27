@@ -160,8 +160,12 @@ html, body {
     }
 
     .listContainer {
+        position: relative;
+        top:10px;
+        left:0;
+        right: 0;
         height: 600px;
-        width: 100%;
+        width: calc(100vw - 40px);
         background-color: white;
         color: #222E50;
     }
@@ -195,6 +199,9 @@ html, body {
 }
 
 .burgContainer {
+    position: relative;
+    top: 0;
+    left: 0;
     cursor: pointer;
     float: left;
     margin-left: 20px;
@@ -211,21 +218,30 @@ html, body {
     transition: 0.4s;
 }
 
-.bar1:hover {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
+.barChange1 {
+    width: 85px;
+    height: 15px;
+    background-color: #222E50;
+    margin: 10px 10px;
+    transition: 0.4s;
+    -webkit-transform: rotate(-45deg) translate(-20px, -10px);
+    transform: rotate(-45deg) translate(-20px, 10px);
+  }
+  
+  .barChange2 {
+  display:none;
+  }
+  
+  .barChange3 {
+    transition: 0.4s;
+    width: 85px;
+    height: 15px;
+    background-color: #222E50;
+    margin: 10px 10px;
+    -webkit-transform: rotate(-45deg) translate(-20px, 15px);
+    transform: rotate(45deg) translate(-10px, 5px);
+  }
 
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
 
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
 
   }

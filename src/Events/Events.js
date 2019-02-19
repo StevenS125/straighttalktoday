@@ -28,10 +28,9 @@ getEvents() {
             .then((myjson) => {
               this.setState({
               event: myjson
-            });
-            
-          } )
-}
+            }); 
+          })
+        }
 
        
 // Builds our table with values from API after API is called upon
@@ -40,7 +39,7 @@ createTable = () => {
   if (this.state.event.length < 1) {
     let table = []
     table.push(
-    <tr>
+    <tr key={1}>
       <td>There are currently no events scheduled</td>
     </tr>
       )
@@ -66,15 +65,6 @@ createTable = () => {
     }  
   }
 }
-
-
-
-
-
-
-
-
-
 
 
   render() {

@@ -37,7 +37,7 @@ getEvents() {
 
 createTable = () => {
   if (this.state.event.length < 1) {
-    let table = []
+    let table = [];
     table.push(
     <tr key={1}>
       <td>There are currently no events scheduled</td>
@@ -51,16 +51,14 @@ createTable = () => {
   for (let i = 0; i < this.state.event.length; i++) {
     let children = [];
     let children2 = [];
-    let children3 = []
+    let children3 = [];
     //Inner loop to create children
       children.push(<td>{`${this.state.event[i].name}`}</td>);
       children2.push(<td className={styles.boxformat}>{`${moment(this.state.event[i].logdate).format('MMMM Do YYYY, h:mm a')}`}</td>);
       children3.push(<td>{`${this.state.event[i].address}`}</td>);
       table.push(<tr>{children}{children2}{children3}</tr>)
     }
-  
     
-  
   return table
     }  
   }

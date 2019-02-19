@@ -25,7 +25,8 @@ class Events extends Component {
 getEvents() {
           fetch("https://sttapi.herokuapp.com/events/?format=json")
           .then((res) => res.json())
-            .then((myjson) => {this.setState({
+            .then((myjson) => {
+              this.setState({
               event: myjson
             });
             
@@ -36,6 +37,15 @@ getEvents() {
 // Builds our table with values from API after API is called upon
 
 createTable = () => {
+  if (this.state.event.length < 1) {
+    let table = []
+    table.push(
+    <tr>
+      <td>There are currently no events scheduled</td>
+    </tr>
+      )
+      return table
+  } else {
   if (this.state.event[0]) {
   let table = []
   // Outer loop to create parent
@@ -49,9 +59,11 @@ createTable = () => {
       children3.push(<td>{`${this.state.event[i].address}`}</td>);
       table.push(<tr>{children}{children2}{children3}</tr>)
     }
+  
     
   
   return table
+    }  
   }
 }
 
@@ -79,7 +91,9 @@ createTable = () => {
           </tr>
         </thead>
         <tbody>
-          { this.createTable() }
+          { 
+          this.createTable() 
+          }
           
 
         </tbody>

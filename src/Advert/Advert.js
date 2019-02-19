@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 
-//components
-
 //styles
 import styles from './Advert.module.scss';
 

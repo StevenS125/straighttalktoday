@@ -159,12 +159,13 @@ html, body {
         border-bottom: none;
     }
 
+// link container
     .listContainer {
         position: relative;
         top:10px;
         left:0;
         right: 0;
-        height: 600px;
+        height: 100vh;
         width: calc(100vw - 40px);
         background-color: white;
         color: #222E50;

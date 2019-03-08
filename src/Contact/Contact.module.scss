@@ -108,6 +108,12 @@ form {
     padding: 20px;
     font-size: 1.2rem;
   }
+  input[type="submit"]:hover {
+    background-color: #3b6fff; 
+    transition: background-color .3s linear;
+    color: white;
+    cursor: pointer;
+  }
 }
 
 .head {

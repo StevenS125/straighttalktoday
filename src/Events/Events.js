@@ -16,11 +16,17 @@ class Events extends Component {
     };
       
       this.createTable = this.createTable.bind(this);
-      this.getEvents = this.getEvents.bind(this);
-      this.getEvents();  
+      this.getEvents = this.getEvents.bind(this); 
     
       }
+
+
+componentDidMount() {
+  this.getEvents()
+}
      
+
+
 // make our API call and set our state to the events object for table
 getEvents() {
           fetch("https://sttapi.herokuapp.com/events/?format=json")

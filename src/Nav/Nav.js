@@ -79,7 +79,7 @@ render() {
         <div>{ this.state.open ? this.openList() : false }</div> 
   </div>
          <div >
-                <span>Straight Talk Consilting Inc</span>
+                <span>Straight Talk Consulting Inc</span>
          </div>  
       </div>
         </div>
